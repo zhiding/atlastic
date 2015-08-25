@@ -1,0 +1,148 @@
+body { 
+  font: 14px/1.5 Arial, 'Droid Sans', 'Hiragino Sans GB','Microsoft YaHei';
+  padding-top: 70px; 
+}
+
+.avatar {
+  border-radius: 4px;
+  margin-right: 2px;
+} 
+
+ul.nav>li.nav-dropdown>a {
+  float: left;
+}
+
+#login_container, #register_container {
+  left: 50%;
+  margin: 0 0 0 -190px;
+  position: absolute;
+  top: 20%;
+}
+
+#login_panel, #register_panel {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 60px 40px;
+  position: relative;
+}
+
+#login_panel {
+  width: 380px;
+}
+
+#register_panel {
+  width: 680px;
+}
+
+#register_panel>div.input-group-vertical {
+  margin-bottom: 20px;
+}
+
+.input-group-addon.glyphicon.glyphicon-user {
+  border-bottom-left-radius: 0px;
+  border-bottom-width: 0px;
+  top: 0px;
+}
+
+div#login_panel>div.input-group-vertical>div.input-group>span.input-group-addon.glyphicon.glyphicon-lock, .input-group-addon.glyphicon.glyphicon-envelope {
+  top: 0px;
+  border-top-left-radius: 0px;
+  border-top-width: 0px;
+}
+
+div#register_panel>div.input-group-vertical>div.input-group>span.input-group-addon.glyphicon.glyphicon-lock {
+  top: 0px;
+}
+
+#login_name, #register_name, #enter_pwd {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 0px;
+  border-bottom-width: 0px;
+}
+
+#login_name:focus, #register_name:focus, #enter_pwd:focus {
+  border-bottom-width: 1px;
+}
+
+#login_pwd, #register_email, #re_enter_pwd {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 4px;
+  border-top-width: 0px;
+}
+
+#login_pwd:focus, #register_email:focus, #re_enter_pwd:focus {
+  border-top-width: 1px;
+}
+
+.input-group-vertical {
+  height: 99px;
+  margin: 0px auto;
+}
+
+.btn-group-vertical, #create_account {
+  margin: 10px auto; 
+  width: 300px;
+}
+
+#register_btn {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+#forget_pwd, #return_login {
+  margin: 10px 0 0 2px;
+}
+
+#forget_pwd>a, #return_login>a, #activate_account>a {
+  text-decoration: none;
+}
+
+#login_err_msg {
+  color: red;
+  margin: 10px auto 0px;
+  text-align: center;
+}
+
+span.register-validate {
+  display: table-cell;
+  padding-left: 20px;
+  vertical-align: middle;
+  width: 300px;
+}
+
+div.register-validate {
+  display: table-cell;
+  width: 300px;
+}
+
+.validate-pwd, .validate-re-pwd {
+  height: 34px;
+  padding-left: 20px;
+  padding-top: 9px;
+  position: absolute;
+  width: 300px;
+}
+.validate-pwd>span:first-child {
+  display: none;
+}
+
+.valiate-pwd {
+  top: 0;
+}
+
+.validate-pwd>.progress {
+  display: none;
+  margin-top: -2px;
+  width: 180px;
+}
+
+.validate-pwd>.progress>.progress-bar {
+  -moz-transition-property: none;
+  -webkit-transition-property: none;
+  -o-transition-property: none;
+  transition-property: none;
+}
+
+.validate-re-pwd {
+  top: 34px;
+}

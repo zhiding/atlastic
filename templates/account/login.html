@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block main %}
+<div id="login_container">
+  <div id="login_panel">
+      <div class="input-group-vertical">
+        <div class="input-group">
+          <span class="input-group-addon glyphicon glyphicon-user"><i class="icon-user"></i></span>
+          <input id="login_name" type="text" class="form-control" placeholder="Enter your name">
+        </div>
+        <div class="input-group">
+          <span class="input-group-addon glyphicon glyphicon-lock"></span>
+          <input id="login_pwd" type="password" class="form-control" placeholder="Password">
+        </div>
+        <p id="login_err_msg"></p>
+      </div>
+      <div class="btn-group-vertical" role="group">
+        <button id="login_btn" class="btn btn-success"> Login </button>
+        <button id="register_btn" class="btn btn-primary"> Create your account </button>
+        {% csrf_token %}
+      </div>
+      <div id="forget_pwd">
+        <a href="#" role="button"> Forget Password? </a> 
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block extractjs %}
+<script type="text/javascript" src="/static/js/account.js"></script>
+{% endblock %}

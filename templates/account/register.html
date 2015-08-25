@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% block main %}
+<div id="register_container">
+  <div id="register_panel">
+    <div class="input-group-vertical">
+      <h4> Username & Email </h4>
+      <div class="input-group">
+        <span class="input-group-addon glyphicon glyphicon-user"><i class="icon-user"></i></span>
+        <input id="register_name" type="text" class="form-control" placeholder="2-12 characters">  
+        <span id="validate_username" class="register-validate"></span>
+      </div>
+      <div class="input-group">
+        <span class="input-group-addon glyphicon glyphicon-envelope"><i class="icon-envelope"></i></span>
+        <input id="register_email" type="email" class="form-control" placeholder="For account verfication">
+        <span id="validate_email" class="register-validate"></span>
+      </div>
+    </div>
+    <div class="input-group-vertical">
+      <h4> Password </h4>
+      <div class="input-group">
+        <span class="input-group-addon glyphicon glyphicon-lock"><i class="icon-lock"></i></span>
+        <input id="enter_pwd" type="password" class="form-control">
+        <input id="re_enter_pwd" type="password" class="form-control" placeholder="Re-enter your password">
+        <div class="register-validate">
+          <div class="validate-pwd">
+            <span><span class="glyphicon glyphicon-remove-sign"></span> Less than 6 characters</span>
+            <div class="progress">
+              <div class="progress-bar progress-bar-danger pwd-weak" role="progressbar"></div>
+              <div class="progress-bar progress-bar-warning pwd-medium" role="progressbar"></div>
+              <div class="progress-bar progress-bar-success pwd-strong" role="progressbar"></div>
+            </div>
+          </div>
+          <div class="validate-re-pwd"></div>
+        </div>
+      </div>
+    </div>
+    <button id="create_account" class="btn btn-primary"> Create Your Account </button>
+    {% csrf_token %}
+    <div id="return_login">
+      <a href="#" role="button"> Already have Account? </a>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block extractjs %}
+<script type="text/javascript" src="/static/js/progress-bar.js"></script>
+<script type="text/javascript" src="/static/js/account.js"></script>
+{% endblock %}

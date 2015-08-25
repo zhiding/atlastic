@@ -1,0 +1,6 @@
+## database configuration ;
+[client]
+database = 'atlastic'
+user = 'root'
+password = ''
+default-character-set = 'utf8'
